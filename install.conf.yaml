@@ -1,0 +1,15 @@
+- clean: ["~"]
+
+- create:
+      - ~/Development
+
+- link:
+      ~/.aws: aws
+      ~/.zshrc: zsh/zshrc
+      ~/.zsh: zsh/plugins
+      ~/.zsh_plugins: antibody/plugins
+      ~/.editorconfig: editorconfig/.editorconfig
+
+- brewfile:
+      - homebrew/Brewfile
+      - homebrew/Caskfile

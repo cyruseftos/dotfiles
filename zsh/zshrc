@@ -1,0 +1,20 @@
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+
+autoload -Uz compinit
+if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
+  compinit
+else
+  compinit -C
+fi
+
+source <(antibody init)
+antibody bundle < ~/.zsh_plugins
+
+# Aliases
+ls='ls --color=tty'
+grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
+
+# Plugins
+source "$HOME/.zsh/yarn-autocompletions/yarn-autocompletions.plugin.zsh"

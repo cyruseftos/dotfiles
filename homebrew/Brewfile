@@ -1,0 +1,28 @@
+
+brew "coreutils"
+brew "diff-so-fancy"
+brew "grip"
+brew "fzf"
+brew "jq"
+brew "wget"
+
+brew "tldr"
+
+brew "httpie"
+brew "ssh-copy-id"
+
+brew "nvm"
+brew "ruby"
+brew "yarn"
+brew "composer"
+
+brew "awscli"
+brew "pulumi"
+brew "terraform_landscape"
+
+brew "graphicsmagick"
+brew "youtube-dl"
+brew "webp"
+
+brew "zsh"
+brew "getantibody/tap/antibody"
